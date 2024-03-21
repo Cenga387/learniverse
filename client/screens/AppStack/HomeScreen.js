@@ -67,20 +67,30 @@ export default function HomeScreen () {
                             </View>
                         </View>
                         <View style={styles.contentContainer2}>
-                        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} snapToInterval={1200} decelerationRate={0} snapToAlignment="center">
-                            <View style={{justifyContent: 'space-between', flexDirection: 'row', width: '100%'}}>
-                            <View style={styles.article3}></View>
-                            <View style={styles.article3}></View>
-                            <View style={styles.article3}></View>
-                            <View style={styles.article3}></View>
-                            <View style={styles.article3}></View>
-                            <View style={styles.article3}></View>
-                            <View style={styles.article3}></View>
-                            </View>
-                        </ScrollView>
+                            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} snapToInterval={1200} decelerationRate={0} snapToAlignment="center">
+                                <View style={{justifyContent: 'space-between', flexDirection: 'row', width: '100%'}}>
+                                    <View style={styles.article3}></View>
+                                    <View style={styles.article3}></View>
+                                    <View style={styles.article3}></View>
+                                    <View style={styles.article3}></View>
+                                    <View style={styles.article3}></View>
+                                    <View style={styles.article3}></View>
+                                    <View style={styles.article3}></View>
+                                </View>
+                            </ScrollView>
                         </View>
                         <View style={styles.contentContainer3}>
-                            <Text style={styles.title2}>Fact of the day</Text>
+                            <Text style={{marginVertical: 16, fontSize: 35, color: 'white'}}>Fact of the day</Text>
+                            <View style={styles.dailyFact}>
+                                <Text style={{fontSize: 20, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</Text>
+                                <View style={styles.factImage}></View>
+                            </View>
+                        </View>
+                        <View style={styles.contentContainer4}>
+                            <Text style={{fontSize: 35, marginVertical: 16, color: 'white'}}>Fun in every category</Text>
+                            <View style={styles.columns}>
+
+                            </View>
                         </View>
                     </View>
                 </ScrollView>
@@ -154,7 +164,11 @@ const styles = StyleSheet.create({
     },
     contentContainer3: {
         marginTop: 40,
-        backgroundColor: 'white'
+        height: 200,
+    },
+    contentContainer4: {
+        marginTop: 40,
+        // paddingHorizontal: 70
     },
     featuredArticles: {
         width: '70%',
@@ -183,5 +197,18 @@ const styles = StyleSheet.create({
         opacity: 0.8,
         backgroundColor: '#330762'
     },
+    dailyFact: {
+        height: 250,
+        flexDirection: 'row',
+    },
+    factImage: {
+        width: 500,
+        height: '100%',
+        backgroundColor: '#330762',
+        marginLeft: '10%',
 
+    },
+    columns: {
+        flexDirection: 'row'
+    }
 })

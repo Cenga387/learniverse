@@ -42,7 +42,21 @@ export default function GeographyScreen () {
                     </View>
                     <Text style={styles.title}>History</Text>
                     <View style={styles.content}>
-                        
+                        <View style={styles.contentContainer1}>
+                            <View style={styles.todaysPicks}>
+                                <Text style={{color: 'white', fontSize: 40, marginTop: 10}}>Today's picks</Text>
+
+                                <View style={{width: '100%', height: 400, backgroundColor: '#FFB15D', opacity: 0.7, marginTop: 16}}>
+
+                                </View>
+                                <View style={{width: '100%', height: 400, backgroundColor: '#FFB15D', opacity: 0.7, marginTop: 16}}>
+
+                                </View>
+                            </View>
+                            <View style={styles.highestRated}>
+                                <Text style={{color: 'white', fontSize: 40, marginTop: 10}}>Highest rated</Text>
+                            </View>
+                        </View>
                     </View>
  
                 </ScrollView>
@@ -106,10 +120,24 @@ const styles = StyleSheet.create({
         fontFamily: 'calibri'
     },
     content: {
-        marginTop: 40,
-        marginHorizontal: '8%',
+        marginTop: 20,
+        paddingHorizontal: 70,
         width: width,
-        justifyContent: 'center',
-        alignItems: 'center'
+        
     },
+    contentContainer1: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        height: 1000
+    }, 
+    highestRated: {
+        width: '50%',
+        height: 1000,
+        marginHorizontal: 12
+    },
+    todaysPicks: {
+        width: '50%',
+        height: 1000,
+        marginHorizontal: 12
+    }
 })

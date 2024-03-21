@@ -1,6 +1,5 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import WelcomeScreen from './screens/AuthStack/WelcomeScreen';
 import LoginScreen from './screens/AuthStack/LoginScreen';
 import RegisterScreen from './screens/AuthStack/RegisterScreen';
 import HomeScreen from './screens/AppStack/HomeScreen';
@@ -18,7 +17,6 @@ const Stack = createNativeStackNavigator();
 function AppNavigator() {
     return (
         <Stack.Navigator initialRouteName='Home'>
-            <Stack.Screen name='Welcome' component={WelcomeScreen} options={{headerShown: false}} />
             <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}} />
             <Stack.Screen name="Register" component={RegisterScreen} options={{headerShown: false}} />
             <Stack.Screen name='Home' component={HomeScreen} options ={{headerShown:false}} />

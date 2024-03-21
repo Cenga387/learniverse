@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     },
     searchInput: {
         height: 40,
-        backgroundColor: '#EFBF8E'
+        backgroundColor: '#FFB15D'
     },
     tabs: {
         flexDirection: 'row'

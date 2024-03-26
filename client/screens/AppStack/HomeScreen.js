@@ -42,7 +42,7 @@ export default function HomeScreen () {
                             </View>
                         </View>
                         <View style={{flexDirection: 'row', width: '15%'}}>
-                            <Pressable style={{fontSize: 20, color: 'white', marginLeft: 50, marginRight: 8, height: 40, justifyContent: 'center', fontFamily: 'calibri'}}>Login</Pressable>
+                            <Pressable style={{fontSize: 20, color: 'white', marginLeft: 50, marginRight: 8, height: 40, justifyContent: 'center', fontFamily: 'calibri'}} onPress={() => navigation.navigate('Login')}>Login</Pressable>
                             <Pressable style={{fontSize: 20, color: 'white', borderWidth: 1, borderRadius: 10, borderColor: 'white', height: 40, justifyContent: 'center', paddingHorizontal: 4, fontFamily: 'calibri'}}>Subscribe</Pressable>
                         </View>
                     </View>

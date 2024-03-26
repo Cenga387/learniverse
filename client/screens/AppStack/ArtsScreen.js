@@ -9,7 +9,7 @@ export default function GeographyScreen () {
     const navigation = useNavigation();
     return(
         <View style={styles.container}>
-            <ImageBackground style={styles.background}  source={require('./../assets/images/earth.webp')}>
+            <ImageBackground style={styles.background}  source={require('./../assets/images/arts.jpg')}>
                 <ScrollView>
                     <View style={styles.header}>
                         <View style={{alignContent: 'center', width: '15%', marginTop: 20}}>
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     },
     searchInput: {
         height: 40,
-        backgroundColor: '#021F65'
+        backgroundColor: '#5B1F1F'
     },
     tabs: {
         flexDirection: 'row'

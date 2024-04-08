@@ -10,7 +10,7 @@ export default function GeographyScreen () {
     return(
         <View style={styles.container}>
             <ImageBackground style={styles.background}  source={require('./../assets/images/history.jpg')}>
-                <ScrollView>
+                <ScrollView showsVerticalScrollIndicator={false}>
                     <View style={styles.header}>
                         <View style={{alignContent: 'center', width: '15%', marginTop: 20}}>
                             <Text style={{fontSize: 20, color: 'white', alignSelf: 'center'}}>Explore</Text>

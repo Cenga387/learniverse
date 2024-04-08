@@ -10,6 +10,7 @@ import NatureScreen from './screens/AppStack/NatureScreen';
 import BiographiesScreen from './screens/AppStack/BiographiesScreen';
 import ArtsScreen from './screens/AppStack/ArtsScreen';
 import TopicsSelection from './screens/AuthStack/TopicsSelection';
+import ArticleScreen from './screens/AppStack/ArticleScreen';
 
 
 
@@ -17,9 +18,10 @@ const Stack = createNativeStackNavigator();
 
 function AppNavigator() {
     return (
-        <Stack.Navigator initialRouteName='Home'>
+        <Stack.Navigator initialRouteName='Article Editor'>
             <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}} />
             <Stack.Screen name="Register" component={RegisterScreen} options={{headerShown: false}} />
+            <Stack.Screen name="Article Editor" component={ArticleScreen} options={{headerShown: false}} />
             <Stack.Screen name="Topics" component={TopicsSelection} options={{headerShown: false}} />
             <Stack.Screen name='Home' component={HomeScreen} options ={{headerShown:false}} />
             <Stack.Screen name='Geography' component={GeographyScreen} options={{headerShown: false}}/>

@@ -36,7 +36,6 @@ export default function LoginScreen  () {
         </View>
       </ImageBackground>
     </View>
-    
   )
 }
 
@@ -49,7 +48,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   container2: {
-    // flex: 1,
     alignItems: 'center',
     alignSelf: 'center',
     marginTop: 50,

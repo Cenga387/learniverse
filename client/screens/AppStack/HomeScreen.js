@@ -4,7 +4,9 @@ import { useNavigation } from "@react-navigation/native";
 
 //Web components
 import HeaderWeb from "../../components/web/HeaderWeb";
-
+import LargeCard from "../../components/web/articles/LargeCard";
+import MediumCard from "../../components/web/articles/MediumCard";
+import SmallCard from "../../components/web/articles/SmallCard";
 
 const { width, height } = Dimensions.get('window');
 const today = new Date();
@@ -22,20 +24,19 @@ export default function HomeScreen () {
                 <ScrollView showsVerticalScrollIndicator={false} style={styles.overlay}>
                     <HeaderWeb color={'#330762'}></HeaderWeb>
                     <View style={styles.content}>
-
                         <View style={styles.contentContainer1}>
                             <View style={styles.featuredArticles}>
                                 <Text style={styles.title2}>Featured articles</Text>
                                 <Text style={{fontSize: 20, color: 'white', marginTop: 10}}>{month}/{date}/{year}</Text>
-                                <View style={styles.article1}></View>
+                                <LargeCard color={'#330762'}></LargeCard>
                                 <View style={{flexDirection: 'row', justifyContent: 'space-between', width: '90%'}}>
-                                    <View style={styles.article2}></View>
-                                    <View style={styles.article2}></View>
+                                    <MediumCard color={'#330762'}></MediumCard>
+                                    <MediumCard color={'#330762'}></MediumCard>
                                 </View>
                                 <Text style={styles.title2}>Discover</Text>
                                 <View style={{flexDirection: 'row', justifyContent: 'space-between', width: '90%'}}>
-                                    <View style={styles.article2}></View>
-                                    <View style={styles.article2}></View>
+                                    <MediumCard color={'#330762'}></MediumCard>
+                                    <MediumCard color={'#330762'}></MediumCard>
                                 </View>
                             </View>
                             <View style={styles.profile}>
@@ -46,13 +47,13 @@ export default function HomeScreen () {
                         <View style={styles.contentContainer2}>
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} snapToInterval={1200} decelerationRate={0} snapToAlignment="center">
                                 <View style={{justifyContent: 'space-between', flexDirection: 'row', width: '100%'}}>
-                                    <View style={styles.article3}></View>
-                                    <View style={styles.article3}></View>
-                                    <View style={styles.article3}></View>
-                                    <View style={styles.article3}></View>
-                                    <View style={styles.article3}></View>
-                                    <View style={styles.article3}></View>
-                                    <View style={styles.article3}></View>
+                                    <SmallCard color={'#330762'}></SmallCard>
+                                    <SmallCard color={'#330762'}></SmallCard>
+                                    <SmallCard color={'#330762'}></SmallCard>
+                                    <SmallCard color={'#330762'}></SmallCard>
+                                    <SmallCard color={'#330762'}></SmallCard>
+                                    <SmallCard color={'#330762'}></SmallCard>
+                                    <SmallCard color={'#330762'}></SmallCard>
                                 </View>
                             </ScrollView>
                         </View>

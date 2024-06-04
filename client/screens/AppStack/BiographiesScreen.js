@@ -2,6 +2,8 @@ import React from "react";
 import { Text, View, StyleSheet, ImageBackground, Dimensions, ScrollView, Pressable } from 'react-native';
 import { SearchBar } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
+import HeaderWeb from "../../components/web/HeaderWeb";
+
 
 const { width, height } = Dimensions.get('window');
 

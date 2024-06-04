@@ -18,7 +18,7 @@ const Stack = createNativeStackNavigator();
 
 function AppNavigator() {
     return (
-        <Stack.Navigator initialRouteName='Article Editor'>
+        <Stack.Navigator initialRouteName='Home'>
             <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}} />
             <Stack.Screen name="Register" component={RegisterScreen} options={{headerShown: false}} />
             <Stack.Screen name="Article Editor" component={ArticleScreen} options={{headerShown: false}} />

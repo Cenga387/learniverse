@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, ImageBackground, Dimensions, ScrollView, Pressa
 import { SearchBar } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
 import HeaderWeb from "../../components/web/HeaderWeb";
+import LargeCard from '../../components/web/articles/LargeCard';
 
 
 const { width, height } = Dimensions.get('window');
@@ -19,10 +20,7 @@ export default function GeographyScreen () {
                         <View style={styles.contentContainer1}>
                             <View style={styles.todaysPicks}>
                                 <Text style={{color: 'white', fontSize: 40, marginTop: 10}}>Today's picks</Text>
-
-                                <View style={{width: '100%', height: 400, backgroundColor: '#FFB15D', opacity: 0.7, marginTop: 16}}>
-
-                                </View>
+                                    <LargeCard color={'#FFB15D'}></LargeCard>
                                 <View style={{width: '100%', height: 400, backgroundColor: '#FFB15D', opacity: 0.7, marginTop: 16}}>
 
                                 </View>

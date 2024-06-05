@@ -7,6 +7,7 @@ import HeaderWeb from "../../components/web/HeaderWeb";
 import LargeCard from "../../components/web/articles/LargeCard";
 import MediumCard from "../../components/web/articles/MediumCard";
 import SmallCard from "../../components/web/articles/SmallCard";
+import MiniCard from "../../components/web/articles/MiniCard";
 
 const { width, height } = Dimensions.get('window');
 const today = new Date();
@@ -256,13 +257,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 4,
         marginVertical: 4
     },
-    article4Image: {
-        width: 150, 
-        height: 100, 
-        backgroundColor: '#330762', 
-        marginRight: 10, 
-        marginTop: 7
-    },
+
     subscribe: {
         backgroundColor: '#330762',
         alignItems: 'center',

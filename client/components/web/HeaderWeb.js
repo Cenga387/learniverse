@@ -14,7 +14,7 @@ export default function HeaderWeb ({color}) {
                 <Text style={{fontSize: 20, color: 'white', alignSelf: 'center'}}>Explore</Text>
             </View>
             <View style={styles.headerCenter}>
-                <Pressable style={styles.title} onPress={() => navigation.navigate('Home')}>Universeum</Pressable>
+                <Pressable onPress={() => navigation.navigate('Home')}><Text style={styles.title} >Universeum</Text></Pressable>
                 <SearchBar
                     placeholder="Search Here..." 
                     round
@@ -23,19 +23,19 @@ export default function HeaderWeb ({color}) {
                     placeholderTextColor='white'              
                 />
                 <View style={styles.tabs}> 
-                    <Pressable style={styles.tabsText}>Games & Quizes</Pressable>
-                    <Pressable style={styles.tabsText}>Fun Facts</Pressable>
-                    <Pressable style={styles.tabsText} onPress={() => navigation.navigate('History')}>History</Pressable>
-                    <Pressable style={styles.tabsText} onPress={() => navigation.navigate('Science')}>Science</Pressable>
-                    <Pressable style={styles.tabsText} onPress={() => navigation.navigate('Geography')}>Geography</Pressable>
-                    <Pressable style={styles.tabsText} onPress={() => navigation.navigate('Nature')}>Nature & Wildlife</Pressable>
-                    <Pressable style={styles.tabsText} onPress={() => navigation.navigate('Arts')}>Arts & Culture</Pressable>
-                    <Pressable style={styles.tabsText} onPress={() => navigation.navigate('Biographies')}>Biographies</Pressable>
+                    <Pressable><Text style={styles.tabsText}>Games & Quizes</Text></Pressable>
+                    <Pressable><Text style={styles.tabsText}>Fun Facts</Text></Pressable>
+                    <Pressable onPress={() => navigation.navigate('History')}><Text style={styles.tabsText}>History</Text></Pressable>
+                    <Pressable onPress={() => navigation.navigate('Science')}><Text style={styles.tabsText}>Science</Text></Pressable>
+                    <Pressable onPress={() => navigation.navigate('Geography')}><Text style={styles.tabsText}>Geography</Text></Pressable>
+                    <Pressable onPress={() => navigation.navigate('Nature')}><Text style={styles.tabsText}>Nature & Wildlife</Text></Pressable>
+                    <Pressable onPress={() => navigation.navigate('Arts')}><Text style={styles.tabsText}>Arts & Culture</Text></Pressable>
+                    <Pressable onPress={() => navigation.navigate('Biographies')}><Text style={styles.tabsText}>Biographies</Text></Pressable>
                 </View>
             </View>
             <View style={{flexDirection: 'row', width: '15%'}}>
-                <Pressable style={{fontSize: 20, color: 'white', marginLeft: 50, marginRight: 8, height: 40, justifyContent: 'center', fontFamily: 'calibri'}} onPress={() => navigation.navigate('Login')}>Login</Pressable>
-                <Pressable style={{fontSize: 20, color: 'white', borderWidth: 1, borderRadius: 10, borderColor: 'white', height: 40, justifyContent: 'center', paddingHorizontal: 4, fontFamily: 'calibri'}}>Subscribe</Pressable>                
+                <Pressable onPress={() => navigation.navigate('Login')}><Text style={{fontSize: 20, color: 'white', marginLeft: 50, marginRight: 8, height: 40, justifyContent: 'center', fontFamily: 'calibri'}}>Login</Text></Pressable>
+                <Pressable style={{justifyContent: 'center', alignItems: 'center'}}><Text style={{fontSize: 20, color: 'white', borderWidth: 1, borderRadius: 10, borderColor: 'white', height: 40, paddingHorizontal: 4, fontFamily: 'calibri'}}>Subscribe</Text></Pressable>                
             </View>
         </View>  
     ) 

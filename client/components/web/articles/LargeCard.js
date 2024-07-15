@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     article: {
         marginTop: 30, 
         opacity: 0.8,
-        width: '90%', 
+        width: '100%', 
         height: 400
     },
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigation } from "@react-navigation/native";
-import { View, Pressable, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function MiniCard ({color}) {
     const navigation = useNavigation();

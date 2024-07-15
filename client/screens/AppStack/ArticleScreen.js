@@ -9,7 +9,7 @@ export default function ArticleScreen() {
 
     return (
         <View style={styles.container}>
-            <ImageBackground source={require('./../assets/images/black-hole.jpg')} style={styles.background}>
+            <ImageBackground source={require('../../assets/black-hole.jpg')} style={styles.background}>
                 <View style={styles.editorContainer}>
                     <View style={styles.inputs}>
                         <TextInput style={styles.titleInput} placeholder="Title of the article"></TextInput>

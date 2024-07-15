@@ -21,7 +21,7 @@ export default function HomeScreen () {
 
     return(
         <View style={styles.container}>
-            <ImageBackground source={require('./../assets/images/black-hole.jpg')} style={styles.background}>
+            <ImageBackground source={require('../../assets/black-hole.jpg')} style={styles.background}>
                 <ScrollView showsVerticalScrollIndicator={false} style={styles.overlay}>
                     <HeaderWeb color={'#330762'}></HeaderWeb>
                     <View style={styles.content}>
@@ -72,71 +72,35 @@ export default function HomeScreen () {
                             <View style={styles.row1}>
                                 <View style={styles.categories}>
                                     <Text style={{fontSize: 35, color: 'white'}}>History</Text>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
+                                    <MiniCard color={'#330762'}></MiniCard>
+                                    <MiniCard color={'#330762'}></MiniCard>
                                 </View>
                                 <View style={styles.categories}>
                                     <Text style={{fontSize: 35, color: 'white'}}>Science</Text>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
+                                    <MiniCard color={'#330762'}></MiniCard>
+                                    <MiniCard color={'#330762'}></MiniCard>
                                 </View>
                                 <View style={styles.categories}>
                                     <Text style={{fontSize: 35, color: 'white'}}>Geography</Text>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
+                                    <MiniCard color={'#330762'}></MiniCard>
+                                    <MiniCard color={'#330762'}></MiniCard>
                                 </View>
                             </View>
                             <View style={styles.row2}>
                                 <View style={styles.categories}>
                                     <Text style={{fontSize: 35, color: 'white'}}>Nature & Wildlife</Text>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
+                                    <MiniCard color={'#330762'}></MiniCard>
+                                    <MiniCard color={'#330762'}></MiniCard>
                                 </View>
                                 <View style={styles.categories}>
                                     <Text style={{fontSize: 35, color: 'white'}}>Arts & Culture</Text>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
+                                    <MiniCard color={'#330762'}></MiniCard>
+                                    <MiniCard color={'#330762'}></MiniCard>
                                 </View>
                                 <View style={styles.categories}>
                                     <Text style={{fontSize: 35, color: 'white'}}>Biographies</Text>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
-                                    <View style={styles.article4}>
-                                        <View style={styles.article4Image}></View>
-                                        <Text style={{fontSize: 17, color: 'white'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-                                    </View>
+                                    <MiniCard color={'#330762'}></MiniCard>
+                                    <MiniCard color={'#330762'}></MiniCard>
                                 </View>
                             </View>
                         </View>
@@ -170,8 +134,6 @@ const styles = StyleSheet.create({
     overlay: {
         backgroundColor: 'rgba(0,0,0,0.35)'
     },
-
-
     title: {
         color: 'white',
         fontSize: 40
@@ -208,32 +170,6 @@ const styles = StyleSheet.create({
     },
     profile: {
         width: '30%',
-    },
-    article1: {
-        marginTop: 30,
-        backgroundColor: '#330762', 
-        opacity: 0.8,
-        width: '90%', 
-        height: 400
-    },
-    article2: {
-        backgroundColor: '#330762',
-        opacity: 0.8,
-        marginTop: 30,
-        width: '48%',
-        height: 400
-    },
-    article3: {
-        marginRight: 40,
-        width: 300,
-        height: 400,
-        opacity: 0.8,
-        backgroundColor: '#330762'
-    },
-    article4: {
-        flexDirection: 'row', 
-        marginVertical: 20, 
-        marginRight: 10
     },
     dailyFact: {
         height: 250,

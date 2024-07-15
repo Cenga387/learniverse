@@ -11,7 +11,7 @@ export default function GeographyScreen () {
     const navigation = useNavigation();
     return(
         <View style={styles.container}>
-            <ImageBackground style={styles.background}  source={require('./../assets/images/earth.webp')}>
+            <ImageBackground style={styles.background}  source={require('../../assets/earth.webp')}>
                 <ScrollView>
                 <HeaderWeb color={'#021F65'}></HeaderWeb>
                     <Text style={styles.title}>Geography</Text>

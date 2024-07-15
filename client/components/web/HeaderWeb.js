@@ -33,9 +33,9 @@ export default function HeaderWeb ({color}) {
                     <Pressable onPress={() => navigation.navigate('Biographies')}><Text style={styles.tabsText}>Biographies</Text></Pressable>
                 </View>
             </View>
-            <View style={{flexDirection: 'row', width: '15%'}}>
-                <Pressable onPress={() => navigation.navigate('Login')}><Text style={{fontSize: 20, color: 'white', marginLeft: 50, marginRight: 8, height: 40, justifyContent: 'center', fontFamily: 'calibri'}}>Login</Text></Pressable>
-                <Pressable style={{justifyContent: 'center', alignItems: 'center'}}><Text style={{fontSize: 20, color: 'white', borderWidth: 1, borderRadius: 10, borderColor: 'white', height: 40, paddingHorizontal: 4, fontFamily: 'calibri'}}>Subscribe</Text></Pressable>                
+            <View style={{flexDirection: 'row', width: '15%', alignItems: 'baseline', justifyContent: 'center', height: 40}}>
+                <Pressable onPress={() => navigation.navigate('Login')}><Text style={{fontSize: 20, color: 'white', marginLeft: 50, marginRight: 16, height: 40, justifyContent: 'center', fontFamily: 'calibri'}}>Login</Text></Pressable>
+                <Pressable onPress={() => navigation.navigate('Register')} style={{ borderWidth: 1, borderRadius: 10, borderColor: 'white', height: 40, alignItems: 'center', justifyContent: 'center'}}><Text style={{fontSize: 20, color: 'white', paddingHorizontal: 4, fontFamily: 'calibri'}}>Subscribe</Text></Pressable>                
             </View>
         </View>  
     ) 

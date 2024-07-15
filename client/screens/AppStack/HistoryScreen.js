@@ -1,18 +1,20 @@
 import React from "react";
 import { Text, View, StyleSheet, ImageBackground, Dimensions, ScrollView, Pressable } from 'react-native';
-import { SearchBar } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
 import HeaderWeb from "../../components/web/HeaderWeb";
 import LargeCard from '../../components/web/articles/LargeCard';
+import MediumCard from "../../components/web/articles/MediumCard";
+import SmallCard from "../../components/web/articles/SmallCard";
+import MiniCard from "../../components/web/articles/MiniCard";
 
 
 const { width, height } = Dimensions.get('window');
 
-export default function GeographyScreen () {
+export default function HistoryScreen () {
     const navigation = useNavigation();
     return(
         <View style={styles.container}>
-            <ImageBackground style={styles.background}  source={require('./../assets/images/history.jpg')}>
+            <ImageBackground style={styles.background}  source={require('../../assets/history.jpg')}>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <HeaderWeb color={'#FFB15D'}></HeaderWeb>
                     <Text style={styles.title}>History</Text>
@@ -20,9 +22,10 @@ export default function GeographyScreen () {
                         <View style={styles.contentContainer1}>
                             <View style={styles.todaysPicks}>
                                 <Text style={{color: 'white', fontSize: 40, marginTop: 10}}>Today's picks</Text>
-                                    <LargeCard color={'#FFB15D'}></LargeCard>
-                                <View style={{width: '100%', height: 400, backgroundColor: '#FFB15D', opacity: 0.7, marginTop: 16}}>
-
+                                <LargeCard color={'#FFB15D'}></LargeCard>
+                                <View style={{flexDirection: 'row', width: '100%', justifyContent: 'space-between'}}>
+                                    <MediumCard color={'#FFB15D'}></MediumCard>
+                                    <MediumCard color={'#FFB15D'}></MediumCard>
                                 </View>
                             </View>
                             <View style={styles.highestRated}>
@@ -50,17 +53,6 @@ const styles = StyleSheet.create({
         width: width,
         height: height
     },
-    header: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: width,
-        flexDirection: 'row',
-        marginBottom: 18
-    },
-    headerCenter: {
-        alignItems: 'center',
-        width: '70%'
-    },
     title: {
         color: 'white',
         fontSize: 40,
@@ -70,26 +62,6 @@ const styles = StyleSheet.create({
         marginTop: 30,
         color: 'white',
         fontSize: 35
-    },
-    search: {
-       backgroundColor: 'transparent',
-       width: '100%',
-       borderBottomWidth: 0,
-       borderTopWidth: 0
-    },
-    searchInput: {
-        height: 40,
-        backgroundColor: '#FFB15D'
-    },
-    tabs: {
-        flexDirection: 'row'
-    },
-    tabsText: {
-        color: 'white',
-        fontSize: 21,
-        paddingHorizontal: 16,
-        fontWeight: '600',
-        fontFamily: 'calibri'
     },
     content: {
         marginTop: 20,

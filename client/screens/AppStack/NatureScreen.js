@@ -10,7 +10,7 @@ export default function GeographyScreen () {
     const navigation = useNavigation();
     return(
         <View style={styles.container}>
-            <ImageBackground style={styles.background}  source={require('./../assets/images/nature.jpg')}>
+            <ImageBackground style={styles.background}  source={require('../../assets/nature.jpg')}>
                 <ScrollView>
                 <HeaderWeb color={'#42982C'}></HeaderWeb>
                     <Text style={styles.title}>Nature & Wildlife</Text>

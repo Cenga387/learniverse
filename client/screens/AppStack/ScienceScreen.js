@@ -9,7 +9,7 @@ export default function ScienceScreen () {
     const navigation = useNavigation();
     return(
         <View style={styles.container}>
-            <ImageBackground style={styles.background}  source={require('./../assets/images/atom.jpg')}>
+            <ImageBackground style={styles.background}  source={require('../../assets/atom.jpg')}>
                 <ScrollView>
                     <View style={styles.header}>
                         <View style={{alignContent: 'center', width: '15%', marginTop: 20}}>

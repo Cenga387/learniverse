@@ -1,0 +1,22 @@
+{
+  "name": "learniverse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cenga387/learniverse.git"
+  },
+  "author": "Cenga387",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cenga387/learniverse/issues"
+  },
+  "homepage": "https://github.com/Cenga387/learniverse#readme",
+  "description": "",
+  "dependencies": {
+    "node": "^20.15.1"
+  }
+}

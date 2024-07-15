@@ -24,7 +24,7 @@ export default function LoginScreen  () {
 
   return (
     <View style={styles.container}>
-      <ImageBackground source={require('../assets/images/black-hole.jpg')} style={styles.background}>
+      <ImageBackground source={require('../../assets/black-hole.jpg')} style={styles.background}>
         <View style={styles.container2}>
           <Text style={styles.title}>Universeum</Text>
           <Text style={styles.loginMessage}>Register your account</Text>
